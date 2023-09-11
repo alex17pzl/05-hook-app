@@ -1,8 +1,18 @@
-# React + Vite
+# Tests
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- 'module' is not defined
+  - agregar al archivo .eslintrc.cjs node:true
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+````js
+module.exports = {
+  env: {
+    browser: true,
+    es2020: true,
+    jest: true, // No hace falta, a menos que tengas error "ECMAScript module"
+    node: true,
+  },
+ 
+//--Resto del código--
+ 
+};
+````

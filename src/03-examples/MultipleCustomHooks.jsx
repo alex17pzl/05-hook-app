@@ -3,11 +3,10 @@ import { LoadingQuote, Quote } from './';
 
 export const MultipleCustomHooks = () => {
   const { counter, increment } = useCounter(1);
+  const { name, url } = !!data && data.forms[0];
   const { data, isLoading } = useFetch(
     `https://pokeapi.co/api/v2/pokemon/${counter}`
   );
-
-  const { name, url } = !!data && data.forms[0];
 
   return (
     <>

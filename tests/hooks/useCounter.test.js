@@ -41,8 +41,6 @@ describe('Pruebas en el useCounter', () => {
       decrement(2);
     });
 
-    act(() => {});
-
     expect(result.current.counter).toBe(7);
   });
 
@@ -54,8 +52,6 @@ describe('Pruebas en el useCounter', () => {
       increment();
       reset();
     });
-
-    act(() => {});
 
     expect(result.current.counter).toBe(10);
   });

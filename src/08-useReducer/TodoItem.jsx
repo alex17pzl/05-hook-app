@@ -8,6 +8,7 @@ export const TodoItem = ({ todo, onRemoveTodo, onToggleTodo }) => {
           todo.done ? 'text-decoration-line-through' : ''
         }`}
         onClick={() => onToggleTodo(todo.id)}
+        data-testid="span"
       >
         {todo.description}
       </span>

@@ -12,7 +12,7 @@ import { HomePage } from './09-useContext/HomePage';
 import { AboutPage } from './09-useContext/AboutPage';
 import { LoginPage } from './09-useContext/LoginPage';
 
-const router = createBrowserRouter([
+export const routerConfig = [
   {
     path: '/',
     element: <MainApp />,
@@ -35,7 +35,9 @@ const router = createBrowserRouter([
       },
     ],
   },
-]);
+];
+
+const router = createBrowserRouter(routerConfig);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
